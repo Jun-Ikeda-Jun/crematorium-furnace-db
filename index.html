@@ -1,0 +1,431 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>火葬炉 更新台帳｜公営火葬場の炉数・供用開始年・年間火葬件数と、計画に書かれた更新予定年度の一覧</title>
+<meta name="description" content="市町村・一部事務組合が公表している火葬場の炉数・供用開始年・年間火葬件数と、個別施設計画や整備基本構想に書かれた更新・改修の予定年度を、施設ごとに15件掲載。建替えと打替え・部分改修の2レーン。すべて出典リンク付き。">
+<style>
+:root{--bg:#f6f5f1;--panel:#fff;--ink:#22201c;--sub:#6d675e;--sub2:#989186;--ac:#9a3f1f;--line:#e4e0d8;--hot:#c2410c;--A:#b45309;--B:#6b7280;--C:#7c2d12;--N:#9ca3af;--reb:#7c2d12;--rel:#1d4ed8}
+@media(prefers-color-scheme:dark){:root{--bg:#14120f;--panel:#1e1b17;--ink:#e6e1d8;--sub:#a49c90;--sub2:#7d766c;--ac:#e08050;--line:#2e2921;--hot:#fb923c;--A:#fbbf24;--B:#9ca3af;--C:#fca5a5;--N:#6b7280;--reb:#f0a080;--rel:#93b8fb}}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-text-size-adjust:100%}
+.wrap{max-width:940px;margin:0 auto;padding:0 14px}
+header{background:linear-gradient(135deg,#7a3418,#3a1c0d);color:#fff;padding:30px 0 26px}
+h1{margin:0;font-size:23px;letter-spacing:.02em}
+.tag{opacity:.93;margin-top:8px;font-size:13.5px;max-width:64em}
+.pills{margin-top:14px;display:flex;flex-wrap:wrap;gap:7px}
+.pills span{background:rgba(255,255,255,.16);border-radius:20px;padding:4px 12px;font-size:12.5px}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:16px 0;padding:0}
+summary{cursor:pointer;padding:13px 15px;font-weight:700;font-size:14px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸ ";color:var(--ac)}
+details[open] summary::before{content:"▾ "}
+.dbody{padding:0 15px 15px;font-size:13px;color:var(--sub)}
+.dbody table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px}
+.dbody th,.dbody td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.dbody th{background:rgba(128,128,128,.08);white-space:nowrap}
+.filters{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0 10px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.fgrid{display:flex;flex-wrap:wrap;gap:7px}
+.filters select,.filters input{font:inherit;font-size:13px;padding:7px 9px;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--ink);max-width:100%}
+.filters input{flex:1;min-width:150px}
+.hit{margin-top:8px;font-size:12.5px;color:var(--sub)}
+main{padding:6px 0 50px}
+.c{display:flex;gap:13px;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:14px;margin:10px 0}
+.left{flex:0 0 92px;text-align:center;border-right:1px solid var(--line);padding-right:10px}
+.mo{font-size:19px;font-weight:800;color:var(--ac);line-height:1.25}
+.mo small{font-size:11px;font-weight:600;margin-left:1px}
+.mo.hot{color:var(--hot)}
+.mo.na2{font-size:12px;font-weight:600;color:var(--sub2)}
+.end{font-size:11.5px;color:var(--sub);margin-top:3px}
+.fy{font-size:11px;color:var(--sub2);margin-top:4px}
+.body{flex:1;min-width:0}
+.body h3{margin:5px 0 8px;font-size:16px;line-height:1.4;word-break:break-word}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{font-size:11px;border-radius:6px;padding:2px 7px;background:rgba(128,128,128,.13);color:var(--sub)}
+.j{font-weight:700!important;color:#fff!important}
+.jA{background:var(--A)!important}.jB{background:var(--B)!important}.jC{background:var(--C)!important}.jN{background:var(--N)!important}
+.l{font-weight:700!important;color:#fff!important}
+.lrebuild{background:var(--reb)!important}.lreline{background:var(--rel)!important}.lnone{background:var(--N)!important}
+.kv{display:flex;gap:8px;font-size:13px;margin:3px 0}
+.kv>span{flex:0 0 8.6em;color:var(--sub);font-size:12px;padding-top:1px}
+.kv>b{flex:1;min-width:0;font-weight:600;word-break:break-word}
+.sub2{display:block;font-weight:400;font-size:11.5px;color:var(--sub2)}
+.na{font-weight:400;color:var(--sub2)}
+.calc{margin-top:7px;font-size:12px;color:var(--sub);background:rgba(128,128,128,.07);border-radius:8px;padding:6px 9px}
+.calc b{color:var(--ink)}
+.tl{margin-top:8px;font-size:12.5px;color:var(--sub);background:rgba(154,63,31,.08);border-radius:8px;padding:7px 9px}
+.warn{display:block;color:var(--sub2);font-size:11px;margin-top:2px}
+.src{margin-top:9px;font-size:12.5px;color:var(--sub)}
+.src a{color:var(--ac);text-decoration:none;font-weight:600}
+.none{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:26px;text-align:center;color:var(--sub);font-size:13px}
+footer{border-top:1px solid var(--line);padding:20px 0 46px;font-size:12px;color:var(--sub)}
+footer ul{padding-left:1.2em;margin:8px 0}
+footer a{color:var(--ac)}
+@media(max-width:560px){
+ .c{gap:10px;padding:12px}.left{flex-basis:70px;padding-right:8px}.mo{font-size:16px}
+ .kv{display:block}.kv>span{display:block;font-size:11px}
+}
+</style></head><body>
+<header><div class="wrap">
+<h1>火葬炉 更新台帳</h1>
+<div class="tag">市町村と一部事務組合が公表している火葬場の炉数・供用開始年・年間火葬件数と、個別施設計画／長寿命化計画に書かれた更新・改修の予定年度を、施設ごとに集めた一覧。〈建替え〉と〈耐火物の打替え・部分改修〉の2レーンに分けて、予定年度までの残り月数順に並べています。</div>
+<div class="pills">
+ <span>掲載 15施設</span>
+ <span>炉数の合計 88基</span>
+ <span>建替えレーン 10件</span>
+ <span>打替え・部分改修レーン 0件</span>
+ <span>A：予定年度まで24ヶ月以内 0件</span>
+ <span>供用開始年あり 9件</span>
+ <span>火葬件数あり 6件</span>
+ <span>出典 5ページ</span>
+ <span>2026-09-01時点</span>
+</div>
+</div></header>
+<div class="wrap">
+
+<details>
+<summary>この一覧が何を集めたもので、A／B／C や2つのレーンが何を意味するか</summary>
+<div class="dbody">
+<p>火葬場は<b>墓地、埋葬等に関する法律</b>（昭和23年法律第48号）にもとづく施設で、その大半は市町村または一部事務組合が設置する公の施設です。設置と炉数・使用料は各団体の<b>設置管理条例</b>に定められ、老朽化と更新の見通しは<b>公共施設等総合管理計画・個別施設計画・長寿命化計画・整備基本構想</b>として、いずれも各団体が自ら公表しています。つまり「その火葬場に炉が何基あり、いつ供用を開始し、年に何件焼いていて、計画では何年度に何をすると書いてあるか」は<b>すでに公表されている</b>のに、団体ごとに別々のPDFへ散っているために横断で見られていません。この一覧は、その公表物に書かれた事実だけを施設単位に集めたものです。</p>
+
+<p><b>並び順について。</b>当サイトは『計画に書かれた予定年度までの残り月数』で並べているだけで、その団体が実際に設計委託や工事をすでに発注したかどうかは確認していない。発注済みの施設もこの一覧に含まれる。並び順は営業先の優先順位を示すものではなく、発注の有無・時期・方式は各団体が決定する事項である。</p>
+
+<p><b>2つのレーン</b>は、レーンは、出典本文にある語から機械的に振り分けたもの。〈建替え〉は施設そのものを新しく建てる方向の記載、〈打替え・部分改修〉は火葬炉設備の更新・耐火物の打替え・長寿命化の記載を指す。両方が書かれている出典では建替えを優先して付けている。</p>
+<table>
+<tr><th>レーン</th><th>付ける条件（出典本文にある語）</th></tr>
+<tr><td><b>建替え・新斎場整備</b></td><td>建替、建て替、建替え、改築、新斎場、新火葬場、移転新築、新施設の整備、全面更新</td></tr><tr><td><b>打替え・部分改修</b></td><td>耐火物、打替、打ち替、炉の更新、火葬炉設備の更新、火葬炉更新、長寿命化、大規模改修、設備更新、改修</td></tr><tr><td><b>更新・改修の記載なし</b></td><td>更新・改修に関する語が見当たらなかったもの</td></tr>
+</table>
+
+<p><b>A／B／C／— は、当サイトが「計画に書かれた予定年度末まであと何ヶ月か」という1項目だけから機械的に付けた区分です。</b>A／B／C／— は、計画に書かれた更新・改修の予定年度までの残り月数という1項目だけから機械的に付けた区分。設置団体の発注予定を示すものでも、当サイトの予測でもない。計画は見直され、予定年度は前後する。</p>
+<table>
+<tr><th>区分</th><th>付ける条件</th><th>注意</th></tr>
+<tr><td><b>A</b></td><td>計画記載の予定年度末まで残り24ヶ月以内</td><td>計画に書かれた年度が近い、というだけの区分。すでに発注済みのこともある。</td></tr><tr><td><b>B</b></td><td>計画記載の予定年度末まで残り24ヶ月超</td><td>年度は書かれているが、まだ先。計画の見直しで前倒し・先送りされることがある。</td></tr><tr><td><b>C</b></td><td>計画記載の予定年度末をすでに過ぎている</td><td>実施済み・実施中の可能性が高い。必ず出典元で現況を確認のこと。</td></tr><tr><td><b>N</b></td><td>出典に更新・改修の予定年度が書かれていない</td><td>計画そのものが無いという意味ではない。当サイトが読んだ出典に年度の記載が無かったというだけ。</td></tr>
+</table>
+
+<p><b>計算した値について。</b>「炉1基あたり年間○件」「想定処理能力に対する割合」は、出典に書かれた年間火葬件数と炉数を、<b>全施設に同じ前提</b>（年間305日稼働・1日2回転）で割っただけの数字です。〈炉1基あたりの年間処理数〉と〈実効処理余力率〉は、出典に書かれた年間火葬件数と炉数から、全施設に同じ前提（年間稼働日数・1日の回転数）を当てはめて機械的に割っただけの数字。実際の稼働日数は友引休場・年末年始・予約枠の組み方で施設ごとに違い、この数字が各施設の実際の余力を表すものではない。</p>
+<p>「経過○年」「打替え周期の○〜○巡目」は、公表された供用開始年から機械的に数えたものです。耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</p>
+<p>「将来推計との比」は、<b>出典に書かれている推計値</b>と直近実績の割り算です。当サイトが将来を予測したものではありません。推計の前提（人口推計の版・市外利用率の見込み）は団体ごとに違うので、比較する際は出典をご確認ください。</p>
+<p>同じ施設が条例・計画・構想の複数の出典から取れた場合は、項目ごとに<b>記載のある方を採って1件に統合</b>しています。数値の年次が出典ごとに違うことがあるため、各項目が何年度のものかは出典で確認してください。カード下部に統合したすべての出典を並べています。</p>
+</div>
+</details>
+
+<div class="filters">
+<div class="fgrid">
+<select id="f-pref"><option value="">都道府県（すべて）</option><option value="大阪府">大阪府</option><option value="神奈川県">神奈川県</option><option value="福島県">福島県</option><option value="秋田県">秋田県</option></select>
+<select id="f-lane"><option value="">レーン（すべて）</option><option value="rebuild">建替え・新斎場整備</option><option value="none">更新・改修の記載なし</option></select>
+<select id="f-judge"><option value="">A/B/C（すべて）</option><option value="A">A：予定年度まで24ヶ月以内</option><option value="B">B：予定年度はまだ先</option><option value="C">C：予定年度を経過</option><option value="N">—：予定年度の記載なし</option></select>
+<select id="f-op"><option value="">設置団体（すべて）</option><option value="union">一部事務組合・広域連合</option><option value="muni">市区町村</option></select>
+<input id="f-q" type="search" placeholder="施設名・団体名で絞り込む">
+</div>
+<div class="hit" id="hit"></div>
+</div>
+
+<main><div id="list">
+<article class="c" data-pref="福島県" data-lane="rebuild" data-judge="B" data-op="muni" data-q="会津若松市斎場 会津若松市 福島県">
+  <div class="left">
+    <div class="mo ">残り42<small>ヶ月</small></div><div class="end">2029年度末</div>
+    <div class="fy">経過37年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jB">B：予定年度はまだ先</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">市区町村</span></div>
+    <h3>会津若松市斎場</h3>
+    <div class="kv"><span>設置団体</span><b>会津若松市<span class="sub2">福島県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>6基<span class="sub2">出典の表記：人体炉6基（うち大型炉2基）、汚物炉1基</span></b></div>
+    <div class="kv"><span>供用開始</span><b>1989年（1989（H1）年4月1日）<span class="sub2">2026年時点で経過37年／炉本体の更新年数として置いた25〜30年の帯に入っています</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="calc">耐火物の打替え周期を5〜8年と置くと、経過37年は <b>4〜7巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">出典に書かれた予定年度：<b>2029年度</b>（令和11年度末まで）　─　年度末まで残り42ヶ月
+       <br>逆算の窓 ─ 2027年3月ごろ 〜 2029年3月ごろ
+       <span class="warn">窓は予定年度末から12〜36ヶ月を単純に引いただけの目安です。委託の公告が実際にいつ出るか、そもそも出るかは設置団体が決めることで、当サイトは発注済みかどうかを確認していません。</span></div>
+    <div class="src">出典：<a href="https://www.city.aizuwakamatsu.fukushima.jp/docs/2025052900014/file_contents/gaiyou.pdf" target="_blank" rel="noopener">個別施設計画・長寿命化計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="大阪府" data-lane="rebuild" data-judge="N" data-op="muni" data-q="楠根斎場 東大阪市 大阪府">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    <div class="fy">経過75年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">市区町村</span></div>
+    <h3>楠根斎場</h3>
+    <div class="kv"><span>設置団体</span><b>東大阪市<span class="sub2">大阪府</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>3基<span class="sub2">出典の表記：3基</span></b></div>
+    <div class="kv"><span>供用開始</span><b>1951年（昭和26年）<span class="sub2">2026年時点で経過75年／炉本体の更新年数として置いた25〜30年の帯に入っています</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b>898件（令和5年度）</b></div>
+    <div class="calc">炉1基あたり年間 <b>299件</b>　／　全施設共通の前提（年間305日稼働・1日2回転）で置いた想定処理能力に対して <b>49.1%</b>（残り50.9%）
+       <span class="warn">稼働日数の前提は当サイトが全施設に同じ数字を当てはめたもので、施設ごとの実際の稼働日数・余力を示すものではありません。</span></div><div class="calc">耐火物の打替え周期を5〜8年と置くと、経過75年は <b>9〜15巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.higashiosaka.lg.jp/cmsfiles/contents/0000041/41191/kousou.pdf" target="_blank" rel="noopener">整備基本構想・基本計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="大阪府" data-lane="rebuild" data-judge="N" data-op="muni" data-q="小阪斎場 東大阪市 大阪府">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    <div class="fy">経過64年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">市区町村</span></div>
+    <h3>小阪斎場</h3>
+    <div class="kv"><span>設置団体</span><b>東大阪市<span class="sub2">大阪府</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>5基<span class="sub2">出典の表記：5基</span></b></div>
+    <div class="kv"><span>供用開始</span><b>1962年（昭和37年）<span class="sub2">2026年時点で経過64年／炉本体の更新年数として置いた25〜30年の帯に入っています</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b>1,752件（令和5年度）</b></div>
+    <div class="calc">炉1基あたり年間 <b>350件</b>　／　全施設共通の前提（年間305日稼働・1日2回転）で置いた想定処理能力に対して <b>57.4%</b>（残り42.6%）
+       <span class="warn">稼働日数の前提は当サイトが全施設に同じ数字を当てはめたもので、施設ごとの実際の稼働日数・余力を示すものではありません。</span></div><div class="calc">耐火物の打替え周期を5〜8年と置くと、経過64年は <b>8〜12巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.higashiosaka.lg.jp/cmsfiles/contents/0000041/41191/kousou.pdf" target="_blank" rel="noopener">整備基本構想・基本計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="大阪府" data-lane="rebuild" data-judge="N" data-op="muni" data-q="岩田斎場 東大阪市 大阪府">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    <div class="fy">経過63年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">市区町村</span></div>
+    <h3>岩田斎場</h3>
+    <div class="kv"><span>設置団体</span><b>東大阪市<span class="sub2">大阪府</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>3基<span class="sub2">出典の表記：3基</span></b></div>
+    <div class="kv"><span>供用開始</span><b>1963年（昭和38年）<span class="sub2">2026年時点で経過63年／炉本体の更新年数として置いた25〜30年の帯に入っています</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b>1,042件（令和5年度）</b></div>
+    <div class="calc">炉1基あたり年間 <b>347件</b>　／　全施設共通の前提（年間305日稼働・1日2回転）で置いた想定処理能力に対して <b>56.9%</b>（残り43.1%）
+       <span class="warn">稼働日数の前提は当サイトが全施設に同じ数字を当てはめたもので、施設ごとの実際の稼働日数・余力を示すものではありません。</span></div><div class="calc">耐火物の打替え周期を5〜8年と置くと、経過63年は <b>7〜12巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.higashiosaka.lg.jp/cmsfiles/contents/0000041/41191/kousou.pdf" target="_blank" rel="noopener">整備基本構想・基本計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="大阪府" data-lane="rebuild" data-judge="N" data-op="muni" data-q="岸和田市立斎場 岸和田市 大阪府">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    <div class="fy">経過55年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">市区町村</span></div>
+    <h3>岸和田市立斎場</h3>
+    <div class="kv"><span>設置団体</span><b>岸和田市<span class="sub2">大阪府</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>10基<span class="sub2">出典の表記：人体火葬炉 10基(うち1基：大型炉)、小型火葬炉 1基、胞衣炉(汚物炉) 1基</span></b></div>
+    <div class="kv"><span>供用開始</span><b>1971年（昭和46年）<span class="sub2">2026年時点で経過55年／炉本体の更新年数として置いた25〜30年の帯に入っています</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b>2,117件（平成27年度）</b></div>
+    <div class="calc">炉1基あたり年間 <b>212件</b>　／　全施設共通の前提（年間305日稼働・1日2回転）で置いた想定処理能力に対して <b>34.7%</b>（残り65.3%）
+       <span class="warn">稼働日数の前提は当サイトが全施設に同じ数字を当てはめたもので、施設ごとの実際の稼働日数・余力を示すものではありません。</span></div><div class="calc">耐火物の打替え周期を5〜8年と置くと、経過55年は <b>6〜11巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.kishiwada.lg.jp/uploaded/attachment/48976.pdf" target="_blank" rel="noopener">整備基本構想・基本計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="秋田県" data-lane="rebuild" data-judge="N" data-op="union" data-q="北部斎場 大曲仙北広域市町村圏組合 秋田県">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    <div class="fy">経過42年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">一部事務組合・広域連合</span></div>
+    <h3>北部斎場</h3>
+    <div class="kv"><span>設置団体</span><b>大曲仙北広域市町村圏組合<span class="sub2">秋田県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>供用開始</span><b>1984年（S59年度）<span class="sub2">2026年時点で経過42年／炉本体の更新年数として置いた25〜30年の帯に入っています</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="calc">耐火物の打替え周期を5〜8年と置くと、経過42年は <b>5〜8巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.os-kouiki.org/uploads/public/pages_0000000286_00/%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E7%AD%89%E7%B7%8F%E5%90%88%E7%AE%A1%E7%90%86%E8%A8%88%E7%94%BB%EF%BC%88%E7%81%AB%E8%91%AC%E5%A0%B4%E7%AD%89%E6%96%BD%E8%A8%AD%E5%80%8B%E5%88%A5%E8%A8%88%E7%94%BB%EF%BC%89.pdf" target="_blank" rel="noopener">個別施設計画・長寿命化計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="秋田県" data-lane="rebuild" data-judge="N" data-op="union" data-q="中央斎場 大曲仙北広域市町村圏組合 秋田県">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    <div class="fy">経過11年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">一部事務組合・広域連合</span></div>
+    <h3>中央斎場</h3>
+    <div class="kv"><span>設置団体</span><b>大曲仙北広域市町村圏組合<span class="sub2">秋田県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>供用開始</span><b>2015年（H27年度）<span class="sub2">2026年時点で経過11年</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="calc">耐火物の打替え周期を5〜8年と置くと、経過11年は <b>1〜2巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.os-kouiki.org/uploads/public/pages_0000000286_00/%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E7%AD%89%E7%B7%8F%E5%90%88%E7%AE%A1%E7%90%86%E8%A8%88%E7%94%BB%EF%BC%88%E7%81%AB%E8%91%AC%E5%A0%B4%E7%AD%89%E6%96%BD%E8%A8%AD%E5%80%8B%E5%88%A5%E8%A8%88%E7%94%BB%EF%BC%89.pdf" target="_blank" rel="noopener">個別施設計画・長寿命化計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="大阪府" data-lane="rebuild" data-judge="N" data-op="muni" data-q="長瀬斎場 東大阪市 大阪府">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    <div class="fy">経過3年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">市区町村</span></div>
+    <h3>長瀬斎場</h3>
+    <div class="kv"><span>設置団体</span><b>東大阪市<span class="sub2">大阪府</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>4基<span class="sub2">出典の表記：4基</span></b></div>
+    <div class="kv"><span>供用開始</span><b>2023年（令和５年１月竣工）<span class="sub2">2026年時点で経過3年</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b>1,597件（令和5年度）</b></div>
+    <div class="calc">炉1基あたり年間 <b>399件</b>　／　全施設共通の前提（年間305日稼働・1日2回転）で置いた想定処理能力に対して <b>65.5%</b>（残り34.5%）
+       <span class="warn">稼働日数の前提は当サイトが全施設に同じ数字を当てはめたもので、施設ごとの実際の稼働日数・余力を示すものではありません。</span></div><div class="calc">耐火物の打替え周期を5〜8年と置くと、経過3年は <b>0〜0巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.higashiosaka.lg.jp/cmsfiles/contents/0000041/41191/kousou.pdf" target="_blank" rel="noopener">整備基本構想・基本計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="秋田県" data-lane="rebuild" data-judge="N" data-op="union" data-q="南部斎場 大曲仙北広域市町村圏組合 秋田県">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    <div class="fy">経過2年</div>
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">一部事務組合・広域連合</span></div>
+    <h3>南部斎場</h3>
+    <div class="kv"><span>設置団体</span><b>大曲仙北広域市町村圏組合<span class="sub2">秋田県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>供用開始</span><b>2024年（R6年度）<span class="sub2">2026年時点で経過2年</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="calc">耐火物の打替え周期を5〜8年と置くと、経過2年は <b>0〜0巡目</b>の帯にあたります
+       <span class="warn">耐火物の打替え5〜8年・火葬炉本体の更新25〜30年は、当サイトが経過年数を読むための前提として置いた一般的な目安の年数であり、個々の施設の実際の周期・更新時期を示すものではない。実際の周期は炉の形式・稼働数・燃料・運転管理で大きく変わる。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.os-kouiki.org/uploads/public/pages_0000000286_00/%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD%E7%AD%89%E7%B7%8F%E5%90%88%E7%AE%A1%E7%90%86%E8%A8%88%E7%94%BB%EF%BC%88%E7%81%AB%E8%91%AC%E5%A0%B4%E7%AD%89%E6%96%BD%E8%A8%AD%E5%80%8B%E5%88%A5%E8%A8%88%E7%94%BB%EF%BC%89.pdf" target="_blank" rel="noopener">個別施設計画・長寿命化計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="" data-lane="none" data-judge="N" data-op="muni" data-q="岸和田市斎場 岸和田市 ">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lnone">更新・改修の記載なし</span><span class="t">市区町村</span></div>
+    <h3>岸和田市斎場</h3>
+    <div class="kv"><span>設置団体</span><b>岸和田市</b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>7基<span class="sub2">出典の表記：理論的火葬炉数7基、予備炉1基、小型炉1基、動物炉1基、合計10基</span></b></div>
+    <div class="kv"><span>供用開始</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b>2,117件（平成27年度）</b></div>
+    <div class="calc">炉1基あたり年間 <b>302件</b>　／　全施設共通の前提（年間305日稼働・1日2回転）で置いた想定処理能力に対して <b>49.6%</b>（残り50.4%）
+       <span class="warn">稼働日数の前提は当サイトが全施設に同じ数字を当てはめたもので、施設ごとの実際の稼働日数・余力を示すものではありません。</span></div><div class="calc">出典に書かれた将来推計 <b>2,481件</b>（2035年） ─ 直近実績との比 <b>＋17.2%</b>
+       <span class="warn">推計値は出典に書かれたもので、当サイトの予測ではありません。</span></div>
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.kishiwada.lg.jp/uploaded/attachment/48976.pdf" target="_blank" rel="noopener">整備基本構想・基本計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="福島県" data-lane="rebuild" data-judge="N" data-op="muni" data-q="会津若松市新斎場 会津若松市 福島県">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lrebuild">建替え・新斎場整備</span><span class="t">市区町村</span></div>
+    <h3>会津若松市新斎場</h3>
+    <div class="kv"><span>設置団体</span><b>会津若松市<span class="sub2">福島県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>6基<span class="sub2">出典の表記：火葬炉6基</span></b></div>
+    <div class="kv"><span>供用開始</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.aizuwakamatsu.fukushima.jp/docs/2025052900014/file_contents/gaiyou.pdf" target="_blank" rel="noopener">個別施設計画・長寿命化計画（PDF） →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-lane="none" data-judge="N" data-op="muni" data-q="久保山斎場 横浜市 神奈川県">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lnone">更新・改修の記載なし</span><span class="t">市区町村</span></div>
+    <h3>久保山斎場</h3>
+    <div class="kv"><span>設置団体</span><b>横浜市<span class="sub2">神奈川県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>12基<span class="sub2">出典の表記：12炉</span></b></div>
+    <div class="kv"><span>供用開始</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/saijo/saijo/saijou.html" target="_blank" rel="noopener">その他の公表資料 →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-lane="none" data-judge="N" data-op="muni" data-q="戸塚斎場 横浜市 神奈川県">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lnone">更新・改修の記載なし</span><span class="t">市区町村</span></div>
+    <h3>戸塚斎場</h3>
+    <div class="kv"><span>設置団体</span><b>横浜市<span class="sub2">神奈川県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>6基<span class="sub2">出典の表記：６炉</span></b></div>
+    <div class="kv"><span>供用開始</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/saijo/saijo/saijou.html" target="_blank" rel="noopener">その他の公表資料 →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-lane="none" data-judge="N" data-op="muni" data-q="南部斎場 横浜市 神奈川県">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lnone">更新・改修の記載なし</span><span class="t">市区町村</span></div>
+    <h3>南部斎場</h3>
+    <div class="kv"><span>設置団体</span><b>横浜市<span class="sub2">神奈川県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>10基<span class="sub2">出典の表記：10炉</span></b></div>
+    <div class="kv"><span>供用開始</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/saijo/saijo/saijou.html" target="_blank" rel="noopener">その他の公表資料 →</a></div>
+  </div>
+</article><article class="c" data-pref="神奈川県" data-lane="none" data-judge="N" data-op="muni" data-q="北部斎場 横浜市 神奈川県">
+  <div class="left">
+    <div class="mo na2">年度の<br>記載なし</div>
+    
+  </div>
+  <div class="body">
+    <div class="tags"><span class="j jN">—：予定年度の記載なし</span><span class="l lnone">更新・改修の記載なし</span><span class="t">市区町村</span></div>
+    <h3>北部斎場</h3>
+    <div class="kv"><span>設置団体</span><b>横浜市<span class="sub2">神奈川県</span></b></div>
+    <div class="kv"><span>炉数（人体炉）</span><b>16基<span class="sub2">出典の表記：16炉</span></b></div>
+    <div class="kv"><span>供用開始</span><b><span class="na">出典に記載なし</span></b></div>
+    <div class="kv"><span>年間火葬件数</span><b><span class="na">出典に記載なし</span></b></div>
+    
+    <div class="tl">当サイトが読んだ出典に、更新・改修の予定年度の記載はありませんでした。<span class="warn">計画が無いという意味ではありません。</span></div>
+    <div class="src">出典：<a href="https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/saijo/saijo/saijou.html" target="_blank" rel="noopener">その他の公表資料 →</a></div>
+  </div>
+</article>
+<div class="none" id="empty" style="display:none">条件に合う施設がありません。絞り込みを緩めてください。</div>
+</div></main>
+
+<footer>
+<p><b>出典と扱い方</b></p>
+<ul>
+<li>掲載しているのは、各市町村・一部事務組合が公表している設置管理条例・公共施設等総合管理計画・個別施設計画・長寿命化計画・整備基本構想等に<b>事実として書かれた項目</b>（施設名・設置団体・所在都道府県・炉数・供用開始年・年間火葬件数と年度・将来推計・更新や改修の予定年度）と、そこから機械的に計算した経過年数・炉1基あたりの年間処理数・想定処理能力に対する割合・伸び率・残り月数だけです。出典本文の検討の経緯・課題の記述・方針の文章は転載していません。</li>
+<li>個人に関する情報（担当者名・委員名・連絡先）は収集も掲載もしていません。</li>
+<li><b>当サイトは、各団体が基本構想や改修設計の委託をすでに発注したかどうかを確認していません。</b>発注済みの施設もこの一覧に含まれます。更新・改修を行うか、いつ発注するか、建替えるか長寿命化で延ばすかは<b>各団体が決定する事項</b>であり、本サイトが予告・保証するものではありません。</li>
+<li>数値は出典の年次がまちまちです。母集団（全国の火葬場の総数）は下記の衛生行政報告例で確認できますが、同報告例に施設別の炉数・設置年はありません。当サイトの掲載件数は全国の火葬場のごく一部です。</li>
+<li>収集は各サイトの robots.txt に従い、低頻度で行っています。掲載の取り下げをご希望の団体はご連絡ください。</li>
+</ul>
+<p><b>制度と統計の一次情報</b></p>
+<ul>
+<li><a href="https://laws.e-gov.go.jp/law/323AC0000000048" target="_blank" rel="noopener">墓地、埋葬等に関する法律</a>（e-Gov法令検索）</li><li><a href="https://www.e-stat.go.jp/stat-search?query=%E7%81%AB%E8%91%AC%E5%A0%B4" target="_blank" rel="noopener">衛生行政報告例（都道府県別の火葬場数はここで確認できる）</a>（e-Stat 政府統計の総合窓口）</li><li><a href="https://www.mhlw.go.jp/stf/kasou_std.html" target="_blank" rel="noopener">火葬場から排出されるダイオキシン類の削減対策指針</a>（厚生労働省）</li><li><a href="https://www.soumu.go.jp/iken/kanrikeikaku.html" target="_blank" rel="noopener">公共施設等総合管理計画・個別施設計画の策定状況</a>（総務省）</li><li><a href="https://www.houjin-bangou.nta.go.jp/" target="_blank" rel="noopener">法人番号公表サイト（設置団体・組合の名称を確認できる）</a>（国税庁）</li>
+</ul>
+<p>火葬炉 更新台帳｜2026-09-01時点で15施設（出典5ページ）を掲載。当サイトでは会員登録・決済・お問い合わせフォームによる個人情報の収集は行っていません。外部への通信を伴う要素も置いていません。</p>
+</footer>
+</div>
+<script>
+(function(){
+  var list=document.getElementById('list'), hit=document.getElementById('hit'), empty=document.getElementById('empty');
+  var cards=[].slice.call(list.getElementsByClassName('c'));
+  var keys=['pref','lane','judge','op'];
+  var sels=keys.map(function(k){ return document.getElementById('f-'+k) });
+  var q=document.getElementById('f-q');
+  function apply(){
+    var t=(q.value||'').trim().toLowerCase(), n=0;
+    for(var i=0;i<cards.length;i++){
+      var c=cards[i], ok=true;
+      for(var k=0;k<keys.length;k++){
+        var v=sels[k].value;
+        if(v && c.getAttribute('data-'+keys[k])!==v){ ok=false; break }
+      }
+      if(ok && t && c.getAttribute('data-q').indexOf(t)<0) ok=false;
+      c.style.display=ok?'':'none';
+      if(ok) n++;
+    }
+    hit.textContent=n+'件を表示中（全'+cards.length+'件・計画に書かれた予定年度末までの残り月数が短い順、年度の記載が無いものは後ろ）';
+    if(empty) empty.style.display=(n===0&&cards.length>0)?'':'none';
+  }
+  sels.forEach(function(s){ s.addEventListener('change',apply) });
+  q.addEventListener('input',apply);
+  apply();
+})();
+</script>
+
+
+<script data-goatcounter="https://junikeda.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body></html>
